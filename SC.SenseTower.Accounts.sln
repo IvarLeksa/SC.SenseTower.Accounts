@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC.SenseTower.Accounts", "SC.SenseTower.Accounts\SC.SenseTower.Accounts.csproj", "{1B0ADF9A-F093-4D4F-A353-14C6634ED067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC.SenseTower.Common", "SC.SenseTower.Common\SC.SenseTower.Common.csproj", "{E0529B18-9E58-47DF-B608-C9BBA38639F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B0ADF9A-F093-4D4F-A353-14C6634ED067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0ADF9A-F093-4D4F-A353-14C6634ED067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0ADF9A-F093-4D4F-A353-14C6634ED067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0ADF9A-F093-4D4F-A353-14C6634ED067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0529B18-9E58-47DF-B608-C9BBA38639F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0529B18-9E58-47DF-B608-C9BBA38639F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0529B18-9E58-47DF-B608-C9BBA38639F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0529B18-9E58-47DF-B608-C9BBA38639F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9436BAA6-9FA1-4118-8966-265AE12338E8}
+	EndGlobalSection
+EndGlobal
