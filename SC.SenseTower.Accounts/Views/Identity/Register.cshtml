@@ -1,0 +1,29 @@
+﻿@model RegisterViewModel
+<div class="row mt-5">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 offset-sm-2 offset-md-3 offset-lg-4">
+        <div class="card w-100">
+            <form method="post">
+                <div class="card-body">
+                    <h5 class="card-title">Регистрация</h5>
+                    <div class="form-group">
+                        <label asp-for="Login"></label>
+                        <input type="text" class="form-control" asp-for="Login" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input type="email" class="form-control" asp-for="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input type="password" class="form-control" asp-for="Password" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword"></label>
+                        <input type="password" class="form-control" asp-for="ConfirmPassword" />
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Регистрация</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using SC.SenseTower.Common.Exceptions;
+using System.Net;
 
 namespace SC.SenseTower.Common.Attributes
 {
@@ -10,10 +12,15 @@ namespace SC.SenseTower.Common.Attributes
     {
         public override void OnException(ExceptionContext context)
         {
-            if (context.Exception is ScException exception)
+            if (context.Exception is ScException || context.Exception is ValidationException)
             {
-                var model = new ModelError(exception, exception.Message);
+                var message = context.Exception is ValidationException
+                    ? $"Validation error: {context.Exception.Message}"
+                    : context.Exception.Message;
+                var model = new ModelError(message);
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                 context.Result = new JsonResult(model);
+                context.ExceptionHandled = true;
             }
             else
                 throw context.Exception;
